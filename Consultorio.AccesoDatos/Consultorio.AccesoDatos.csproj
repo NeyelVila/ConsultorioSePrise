@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="AtencionDAL.cs" />
     <Compile Include="ConexionMySQL.cs" />
+    <Compile Include="ConfiguracionConexion.cs" />
     <Compile Include="EspecialidadDAL.cs" />
     <Compile Include="HistoriaClinicaDAL.cs" />
     <Compile Include="PacienteDAL.cs" />

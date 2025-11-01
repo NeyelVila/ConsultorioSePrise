@@ -11,6 +11,8 @@ namespace Consultorio.Presentacion1
         public frmAdmision()
         {
             InitializeComponent();
+            dtpFechaAdmision.Value = DateTime.Today; // Establece la fecha de hoy por defecto
+
         }
         // --- EVENTOS DEL FORMULARIO ---
         private void frmAdmision_Load(object sender, EventArgs e)

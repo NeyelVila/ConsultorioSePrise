@@ -12,9 +12,11 @@ namespace Consultorio.Presentacion1
 {
     public partial class frmMenuPrincipal : Form
     {
-        public frmMenuPrincipal()
+        private Form loginForm;
+        public frmMenuPrincipal(Form login)
         {
             InitializeComponent();
+            this.loginForm = login;
         }
 
         private void btnGestionTurnos_Click(object sender, EventArgs e)
@@ -38,10 +40,8 @@ namespace Consultorio.Presentacion1
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            // Cerramos este formulario y volvemos a mostrar el login
-            // Necesitamos una referencia al formulario de login
-            // Una mejor forma es manejar esto en Program.cs, pero esto es más simple:
-            Application.Restart();
+           loginForm.Show(); // Mostramos el formulario de login nuevamente
+            this.Close(); // Cerramos el menú principal
         }
 
         private void btnAdmision_Click(object sender, EventArgs e)

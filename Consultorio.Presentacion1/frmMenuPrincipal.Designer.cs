@@ -33,85 +33,102 @@
             this.btnGestionProfesionales = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnAdmision = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGestionTurnos
             // 
-            this.btnGestionTurnos.Location = new System.Drawing.Point(184, 97);
+            this.btnGestionTurnos.BackColor = System.Drawing.Color.Transparent;
+            this.btnGestionTurnos.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionTurnos.Location = new System.Drawing.Point(47, 70);
             this.btnGestionTurnos.Name = "btnGestionTurnos";
-            this.btnGestionTurnos.Size = new System.Drawing.Size(141, 63);
+            this.btnGestionTurnos.Size = new System.Drawing.Size(164, 70);
             this.btnGestionTurnos.TabIndex = 0;
             this.btnGestionTurnos.Text = "GESTION DE TURNOS";
-            this.btnGestionTurnos.UseVisualStyleBackColor = true;
+            this.btnGestionTurnos.UseVisualStyleBackColor = false;
             this.btnGestionTurnos.Click += new System.EventHandler(this.btnGestionTurnos_Click);
             // 
             // btnGestionPacientes
             // 
-            this.btnGestionPacientes.Location = new System.Drawing.Point(493, 97);
+            this.btnGestionPacientes.BackColor = System.Drawing.Color.Transparent;
+            this.btnGestionPacientes.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionPacientes.Location = new System.Drawing.Point(433, 70);
             this.btnGestionPacientes.Name = "btnGestionPacientes";
-            this.btnGestionPacientes.Size = new System.Drawing.Size(134, 51);
+            this.btnGestionPacientes.Size = new System.Drawing.Size(164, 70);
             this.btnGestionPacientes.TabIndex = 1;
             this.btnGestionPacientes.Text = "GESTION DE PACIENTES";
-            this.btnGestionPacientes.UseVisualStyleBackColor = true;
+            this.btnGestionPacientes.UseVisualStyleBackColor = false;
             this.btnGestionPacientes.Click += new System.EventHandler(this.btnGestionPacientes_Click);
             // 
             // btnGestionProfesionales
             // 
-            this.btnGestionProfesionales.Location = new System.Drawing.Point(339, 200);
+            this.btnGestionProfesionales.BackColor = System.Drawing.Color.Transparent;
+            this.btnGestionProfesionales.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionProfesionales.Location = new System.Drawing.Point(433, 180);
             this.btnGestionProfesionales.Name = "btnGestionProfesionales";
-            this.btnGestionProfesionales.Size = new System.Drawing.Size(138, 64);
+            this.btnGestionProfesionales.Size = new System.Drawing.Size(164, 70);
             this.btnGestionProfesionales.TabIndex = 2;
             this.btnGestionProfesionales.Text = "GESTION DE PROFESIONALES";
-            this.btnGestionProfesionales.UseVisualStyleBackColor = true;
+            this.btnGestionProfesionales.UseVisualStyleBackColor = false;
             this.btnGestionProfesionales.Click += new System.EventHandler(this.btnGestionProfesionales_Click);
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(621, 13);
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(232, 361);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(162, 23);
             this.btnCerrarSesion.TabIndex = 3;
             this.btnCerrarSesion.Text = "CERRAR SESION";
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnAdmision
             // 
-            this.btnAdmision.Location = new System.Drawing.Point(270, 295);
+            this.btnAdmision.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdmision.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmision.Location = new System.Drawing.Point(47, 191);
             this.btnAdmision.Name = "btnAdmision";
-            this.btnAdmision.Size = new System.Drawing.Size(288, 76);
+            this.btnAdmision.Size = new System.Drawing.Size(164, 70);
             this.btnAdmision.TabIndex = 5;
             this.btnAdmision.Text = "\"ADMISION DE PACIENTES\"";
-            this.btnAdmision.UseVisualStyleBackColor = true;
+            this.btnAdmision.UseVisualStyleBackColor = false;
             this.btnAdmision.Click += new System.EventHandler(this.btnAdmision_Click);
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.Image = global::Consultorio.Presentacion1.Properties.Resources.iconoSEPRISE;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 118);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(176, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 45);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "MENU PRINCIPAL";
             // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Consultorio.Presentacion1.Properties.Resources.Gemini_Generated_Image_2px2xd2px2xd2px2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(625, 422);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAdmision);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnGestionProfesionales);
             this.Controls.Add(this.btnGestionPacientes);
             this.Controls.Add(this.btnGestionTurnos);
+            this.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenuPrincipal";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -121,7 +138,7 @@
         private System.Windows.Forms.Button btnGestionPacientes;
         private System.Windows.Forms.Button btnGestionProfesionales;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAdmision;
+        private System.Windows.Forms.Label label1;
     }
 }

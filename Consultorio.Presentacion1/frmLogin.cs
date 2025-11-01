@@ -39,7 +39,7 @@ namespace Consultorio.Presentacion1
                     if (adminValidado.Rol == "Admin")
                     {
                         // Si es Admin, va al Menú Principal
-                        frmMenuPrincipal menu = new frmMenuPrincipal();
+                        frmMenuPrincipal menu = new frmMenuPrincipal(this);
                         menu.Show();
                         this.Hide();
                     }
@@ -49,8 +49,8 @@ namespace Consultorio.Presentacion1
                         // Pasamos el ID del profesional y su nombre al formulario
                         frmConsultorioMedico consultorio = new frmConsultorioMedico(
                             adminValidado.ID_Profesional_Asociado.Value,
-                            adminValidado.Nombre
-                        );
+                            adminValidado.Nombre,
+                        this);
                         consultorio.Show();
                         this.Hide();
                     }
@@ -79,6 +79,16 @@ namespace Consultorio.Presentacion1
         private void chkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
         {
             txtContrasena.PasswordChar = chkMostrarContrasena.Checked ? '\0' : '*';
+        }
+
+        private void txtUsuario_VisibleChanged(object sender, EventArgs e) // Limpiamos los campos
+        {
+            if (this.Visible)
+            {
+                txtUsuario.Text = "";
+                txtContrasena.Text = "";
+                txtUsuario.Focus();
+            }
         }
     }
 }

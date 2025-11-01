@@ -14,6 +14,7 @@ namespace Consultorio.Presentacion1
 {
     public partial class frmConsultorioMedico : Form
     {
+        private Form loginform;
         // --- Propiedades del Médico Logueado ---
         private int medicoID;
         private string medicoNombre;
@@ -30,11 +31,12 @@ namespace Consultorio.Presentacion1
 
         // --- CONSTRUCTOR MODIFICADO ---
         // Lo llamamos desde frmLogin
-        public frmConsultorioMedico(int idProfesional, string nombreProfesional)
+        public frmConsultorioMedico(int idProfesional, string nombreProfesional, Form login)
         {
             InitializeComponent();
             this.medicoID = idProfesional;
             this.medicoNombre = nombreProfesional;
+            this.loginform = login;
         }
         // --- EVENTO LOAD (Al abrir el formulario) ---
         private void frmConsultorioMedico_Load(object sender, EventArgs e)
@@ -141,7 +143,8 @@ namespace Consultorio.Presentacion1
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            loginform.Show(); // Mostramos el formulario de login nuevamente
+            this.Close(); // Cerramos el consultorio    
         }
         // --- MÉTODOS AUXILIARES (Helpers) ---
 
